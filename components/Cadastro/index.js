@@ -11,11 +11,21 @@ export async function renderCadastro() {
         const htmlStringContent = await response.text();                    // Obtém o conteúdo como string
         main.innerHTML = htmlStringContent;                                 // Insere o conteúdo HTML no main
 
-        // Exemplo de JS próprio do componente
-        const btn = main.querySelector('#cadastroBtn');
-        if (btn) {
-            btn.onclick = () => {
-                alert('Botão do cadastro clicado!');
+        // Lógica para adicionar membros na tabela (exemplo simples)
+        const form = main.querySelector('#formCadastroMembro');
+        const lista = main.querySelector('#listaMembros');
+        if (form && lista) {
+            form.onsubmit = function(e) {
+                e.preventDefault();
+                const nome = main.querySelector('#nomeMembro').value.trim();
+                const email = main.querySelector('#emailMembro').value.trim();
+                const tel = main.querySelector('#telefoneMembro').value.trim();
+                if (nome && email) {
+                    const tr = document.createElement('tr');
+                    tr.innerHTML = `<td>${nome}</td><td>${email}</td><td>${tel}</td>`;
+                    lista.appendChild(tr);
+                    form.reset();
+                }
             };
         }
     } catch (error) {

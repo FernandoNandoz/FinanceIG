@@ -61,15 +61,7 @@ body {
 
 /* Conteúdo principal */
 .main-content {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    box-sizing: border-box;
-
     margin: 10px;
-    
-    justify-content: center;
-    align-items: center;
 }
 
 
