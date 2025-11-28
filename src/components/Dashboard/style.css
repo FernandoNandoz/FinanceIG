@@ -1,13 +1,19 @@
 /* Dashboard.css */
 .dashboard-component {
     flex: 1;
-    background: #fff;
-    border: 1px solid #90caf9;
+    display: flex;
+    flex-direction: column;
+    background: #e3f2fd;
+    border: #90caf9 1px solid;
     border-radius: 8px;
-    padding: 32px;
+    padding: 8px 30px 0 30px;
+    min-width: 0;
+    width: 100%;
+    box-sizing: border-box;
 }
 .dashboard-component h2 {
-    color: #1976d2;
+    display: flex;
+    color: black;
 }
 .dashboard-cards {
     display: flex;

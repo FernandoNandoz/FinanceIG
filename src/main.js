@@ -149,7 +149,7 @@ async function render(page) {
         if (e.target.tagName === 'BUTTON' && e.target.hasAttribute('data-page')) {
             const targetPage = e.target.getAttribute('data-page');
             if (targetPage === 'login') {
-                window.location.href = './login/index.html';
+                window.location.href = './login.html';
             } else {
                 await render(targetPage);
             }

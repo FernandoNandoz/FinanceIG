@@ -1,0 +1,103 @@
+/* financeiro.css */
+.financeiro-component {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: #e3f2fd;
+    border: #90caf9 1px solid;
+    border-radius: 8px;
+    padding: 8px 30px 0 30px;
+    min-width: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.financeiro-component h2 {
+    display: flex;
+    color: black;
+}
+
+.cad {
+    width: 50%;
+}
+
+.financeiro-form {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    max-width: none;
+    gap: 18px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+}
+.financeiro-form .form-group {
+    display: flex;
+    flex-direction: column;
+    min-width: 180px;
+    flex: 1;
+}
+.financeiro-form label {
+    margin-bottom: 4px;
+    color: black;
+    font-weight: 500;
+}
+.financeiro-form input, .financeiro-form select {
+    padding: 8px;
+    border: 1px solid #cfd8dc;
+    border-radius: 4px;
+    font-size: 1rem;
+    background: #f9fafb;
+    transition: border 0.2s;
+}
+.financeiro-form input:focus, .financeiro-form select:focus {
+    border: 1.5px solid #1976d2;
+    outline: none;
+    background: #fff;
+}
+.financeiro-form button[type="submit"] {
+    background: #388e3c;
+    color: #fff;
+    border: none;
+    padding: 10px 0;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: background 0.2s;
+    width: 100%;
+    align-self: flex-end;
+    margin-bottom: 20px;
+}
+.financeiro-form button[type="submit"]:hover {
+    background: #2e7031;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background: #cae7fb;
+    margin: 16px 0;
+}
+
+.financeiro-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(25, 118, 210, 0.04);
+}
+.financeiro-table th, .financeiro-table td {
+    padding: 10px 14px;
+    border-bottom: 1px solid #e3f2fd;
+    text-align: left;
+}
+.financeiro-table th {
+    background: #bbdefb;
+    color: black;
+    font-weight: 600;
+}
+.financeiro-table tr:last-child td {
+    border-bottom: none;
+}

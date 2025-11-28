@@ -20,7 +20,7 @@ body::before {
     z-index: -1;
     /*background: #293241;*/
 
-    background-image: url("../assets/background_01.jpg");
+    background-image: url("./assets/background_01.jpg");
     background-size: cover;
    
 }
