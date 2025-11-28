@@ -1,10 +1,8 @@
 /* cadastro.css */
 .cadastro-component {
     background: #e3f2fd;
-    border: 1px solid #90caf9;
     border-radius: 8px;
     padding: 32px;
-    margin-top: 24px;
 }
 .cadastro-component h2 {
     color: #1976d2;

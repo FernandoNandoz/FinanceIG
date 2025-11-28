@@ -30,7 +30,7 @@ function loadComponenteCSS(componentName) {
         const link = document.createElement('link');        // Cria o elemento link
         link.rel = 'stylesheet';                            // Define o relacionamento como stylesheet
         link.href = './components/Cadastro/style.css';      // Define o caminho do arquivo CSS
-        link.id = 'cadatro-css';                            // Define um ID para evitar múltiplas inclusões
+        link.id = 'cadastro-css';                            // Define um ID para evitar múltiplas inclusões
         document.head.appendChild(link);                    // Adiciona o link ao head do documento
 
     } else if (componentName === 'financeiro') {

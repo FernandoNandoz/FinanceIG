@@ -11,13 +11,7 @@ export async function renderDashboard() {
         const htmlStringContent = await response.text();                    // Obtém o conteúdo como string
         main.innerHTML = htmlStringContent;                                 // Insere o conteúdo HTML no main
 
-        // Exemplo de JS próprio do componente
-        const btn = main.querySelector('#dashboardBtn');
-        if (btn) {
-            btn.onclick = () => {
-                alert('Botão do Dashboard clicado!');
-            };
-        }
+        // Aqui você pode adicionar JS próprio do componente, se necessário
     } catch (error) {
         main.innerHTML = '<p>Erro ao carregar o componente Dashboard.</p>';
         console.error('Erro ao carregar o componente Dashboard:', error);
