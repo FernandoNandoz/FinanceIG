@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f6fa;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+/* Conteúdo principal */
+.main-content {
+    flex: 1;
+    padding: 48px 48px 32px 260px;
+    min-width: 0;
+    min-height: 100vh;
+    background: #f4f6fa;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+/* Layout principal */
+#app {
+    width: 100vw;
+    height: 100vh;
+    min-height: 100vh;
+    min-width: 100vw;
+    background: #fff;
+    border-radius: 0;
+    box-shadow: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    background: #1976d2;
+    color: #fff;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 32px 0 32px 0;
+    min-height: 100vh;
+    height: 100vh;
+    box-shadow: 2px 0 8px rgba(0,0,0,0.04);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+.sidebar h3 {
+    text-align: center;
+    margin-bottom: 32px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.sidebar button {
+    background: none;
+    color: #fff;
+    border: none;
+    padding: 14px 24px;
+    text-align: left;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 0 20px 20px 0;
+    margin-bottom: 6px;
+    transition: background 0.2s, color 0.2s;
+}
+.sidebar button:hover, .sidebar button.active {
+    background: #1565c0;
+    color: #e3f2fd;
+}
+
+
+
+@media (max-width: 700px) {
+    .sidebar {
+        width: 100px;
+        padding: 16px 0;
+    }
+    .main-content {
+        padding-left: 120px;
+        padding-right: 12px;
+    }
+    .sidebar h3 {
+        font-size: 0.9rem;
+        margin-bottom: 16px;
+    }
+    .sidebar button {
+        font-size: 0.9rem;
+        padding: 10px 10px;
+    }
+}
+
+
+h2 {
+    text-align: center;
+    color: #1976d2;
+    margin-bottom: 8px;
+}
+p {
+    text-align: center;
+    color: #444;
+}
+
+
+button[type="submit"] {
+    background: #388e3c;
+    color: #fff;
+    border: none;
+    padding: 10px 0;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: background 0.2s;
+}
+
+button[type="submit"]:hover {
+    background: #2e7031;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 24px;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+}
